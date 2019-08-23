@@ -1,0 +1,84 @@
+
+html, body, form, fieldset, table, tr, td, p, h1,h2,h3,h4 {
+    font-family: 'Roboto', serif;
+}
+
+
+.top-10{
+    margin-top: 10px;
+}
+.top-30{
+    margin-top: 30px;
+}
+.bg{
+    background: url(../img/papyrus.png);
+}
+.table-bordered tr {
+    height: 100px;
+}
+.table-bordered p {
+    font-size: 45px;
+}
+.table-bordered {
+    table-layout:fixed;
+    width: 100%;
+}
+.table-bordered>tbody>tr>td  {
+    border: 2px solid #000;
+}
+.button-start {
+    text-align: center;
+}
+.table td, .table th {
+    text-align: center;
+}
+.table th{
+    background: #efefef;
+}
+.config p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.config button {
+    margin-top: 5px;
+}
+#board{
+    background: url(../img/background.jpg);
+}
+#players_table{
+    border: 2px solid #dadada;
+}
+#players p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+#board {
+    margin-top: 30px;
+}
+#winner_div {
+    display:none;
+    text-align: center;
+}
+#winner_div h3, #winner_div p {
+    text-align: center;
+}
+#winner_img img {
+    width: 100%;
+}
+.drag-drop-item
+{
+    touch-action: none;
+}
+.instructions li {
+    font-size: 15px;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .turn{
+        margin-top: 20px;
+    }
+}
