@@ -137,7 +137,7 @@ $(document).ready(function () {
     function getLatestMatch() {
         $.ajax({
             type: "GET",
-            url: "php/get_match.php",
+            url: "php/getMatch.php",
             dataType: 'json',
             success: function (data) {
                 if(data != null){
@@ -160,7 +160,7 @@ $(document).ready(function () {
     function getMatchScore() {
         $.ajax({
             type: "GET",
-            url: "php/get_score.php",
+            url: "php/getScore.php",
             dataType: 'json',
             success: function (data) {
                 if(data.length !== 0){
@@ -196,7 +196,7 @@ $(document).ready(function () {
     function getConfig() {
         $.ajax({
             type: "GET",
-            url: "php/get_config.php",
+            url: "php/getConfig.php",
             dataType: 'json',
             success: function (data) {
                 if(data.length !== 0){
@@ -214,7 +214,7 @@ $(document).ready(function () {
     function newGame() {
         $.ajax({
             type: "POST",
-            url: "php/new_game.php",
+            url: "php/newGame.php",
             dataType: ' json',
             data: $("form").serialize(),
             success: function (data) {
@@ -235,7 +235,7 @@ $(document).ready(function () {
     function updateGame() {
         $.ajax({
             type: "POST",
-            url: "php/update_match.php",
+            url: "php/updateMatch.php",
             dataType: ' json',
             data: $("form").serialize(),
             success: function (data) {
@@ -291,7 +291,7 @@ $(document).ready(function () {
         var colour = $("#colour").val();
         $.ajax({
             type: "POST",
-            url: "php/update_config.php",
+            url: "php/updateConfig.php",
             dataType: ' json',
             data: {'colour':colour},
             success: function (data) {
